@@ -1,0 +1,70 @@
+
+/* src/assets/styles/global.css */
+
+/* Star Wars Theme Colors */
+:root {
+  --background-color: #1a1a1a;
+  --primary-color: #ffe81f;
+  --secondary-color: #4b6cc1;
+  --text-color: #ffffff;
+  --button-color: #2a2a2a;
+  --glow-color: #ffe81f;
+}
+
+/* Base Styling */
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  color: var(--primary-color);
+  text-transform: uppercase;
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  background-color: var(--button-color);
+  color: var(--text-color);
+  border: 2px solid var(--secondary-color);
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--glow-color);
+  box-shadow: 0 0 8px var(--glow-color);
+}
+
+/* Buttons */
+button {
+  background-color: var(--button-color);
+  color: var(--text-color);
+  border: none;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  box-shadow: 0 0 10px var(--glow-color);
+}
+
+/* Link Styling */
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
